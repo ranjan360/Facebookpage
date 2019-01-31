@@ -1,0 +1,468 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ranjan Kumar">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+  <title>Facebook</title>
+  <style type="text/css">
+  	body{
+  		width: 100%;
+  		background: #E8EAEE;
+  	}
+  	#navbar{
+  		position: fixed;
+  		width: 100%;
+  		background: #4267b2;
+  		height: 43px;
+  	}
+  	.sidebar{
+  		margin-top: 40%;
+  		list-style-type: none;
+  	}
+  	.sidebar > li {
+  		margin: -8;
+  	}
+  	#nav:hover{
+
+  		background: #013aad;
+  	}
+  	#textbar > ul{
+  		display: flex !important;
+  	}
+  	#mainid{
+  		width: 900px;
+  		margin-right: auto;
+  		margin-left: auto;
+  	}
+  	.newitem1{
+  		margin-top: -20px;
+  	}
+  	#chat>li{
+  		margin-top: -10px;
+  	}
+  </style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg" id="navbar">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" style="background: black">
+	  		<span class="navbar-toggler-icon" style="color:#fff;"></span>
+	    </button>
+		<a class="navbar-brand" href="#"><img src="image/logo.png" width="25" height="25" style="left: 8px;margin-left: 90px; "></a>
+		<div class="collapse navbar-collapse" id="navbar1">
+			<form class="form-inline">
+		    	<input class="form-control" type="search" style="width: 418px;height: 25px;margin-top: 15px;position: relative;right: 10px;">
+		    	<button class="btn" type="submit" style="height: 25px;margin-top: 15px;position: relative;right: 22px;"><i class="fa fa-search" style="font-size: 18px;position: relative;bottom: 4px;"></i></button>
+			</form>
+		    <ul class="navbar-nav mr-auto" style="margin-left: 80px;">
+		      <li class="nav-item active" id="nav">
+		        <a class="nav-link" href="#"><img class="rounded-circle" src="image/profile.jpg" width="25" height="25"><span style="margin-left: 8px; font-size: 12px;color: #fff;font-weight: bold;">Ranjan</span></a>
+		      </li>
+		      <li class="nav-item" id="nav">
+		        <a class="nav-link" href="#" style="margin-left: 5px;margin-top: 4px; font-size: 12px;color: #fff;font-weight: bold;">Home</a>
+		      </li>
+		      <li class="nav-item" id="nav">
+		        <a class="nav-link" href="#" style="margin-left: 5px;margin-top: 4px; font-size: 12px;color: #fff;font-weight: bold;">Find Friends</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#" style="margin-left: 15px;margin-top: 4px; font-size: 18px;color: #000;font-weight: bold;"><i class="fas fa-user-friends"></i></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#" style="margin-top: 4px; font-size: 18px;color: #000;font-weight: bold;"><i class="fab fa-facebook-messenger"></i></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#" style="margin-top: 4px; font-size: 18px;color: #000;font-weight: bold;"><i class="fas fa-bell"></i></a>
+		      </li>
+		       <li class="nav-item">
+		        <a class="nav-link" href="#" style="margin-left: 15px;margin-top: 4px; font-size: 18px;color: #000;font-weight: bold;"><i class="fas fa-question-circle"></i></a>
+		      </li>
+		       <li class="nav-item">
+		        <a class="nav-linkdropdown-toggle" data-toggle="dropdown" href="#" style="margin-top: 4px;color: #000;font-weight: bold;"><i class="material-icons" style="position: relative;font-size: 32;top: 5px;">arrow_drop_down</i></a>
+		        <div class="dropdown-menu" style="margin-left: 68%;height: 350px;">
+		        	<span style="font-size: 12px;margin-left: 5px;">Your page:</span>
+		        	<a class="dropdown-item" href="https://www.facebook.com/pages/creation/?ref_type=logout_gear" style="font-size: 12px;margin-left: 5px;">Create Page</a>
+				    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px;">Manage Page</a>
+				    <hr style="position: relative;bottom: 15px;">
+				    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px; position: relative;bottom: 25px;" >Create Group</a>
+				    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px; position: relative;bottom: 25px;"">New Group</a>
+				    <hr style="position: relative;bottom: 35px;">
+				    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px;position: relative;bottom: 40px;"">Create Ads</a>
+				    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px;position: relative;bottom: 40px;"">Advertising on Facebook</a>
+				    <hr style="position: relative;bottom: 45px;">
+				    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px;position: relative;bottom: 55px;"">Activity log</a>
+				    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px;position: relative;bottom: 55px;"">News Feed preferences</a>
+				    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px;position: relative;bottom: 55px;"">Settings</a>
+				    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px;position: relative;bottom: 55px;"">Log Out</a>
+		        </div>
+		      </li>
+		    </ul>
+	  	</div>
+	</nav>
+
+	<!-- Navbar End  -->
+
+	<!-- Right sidebar Start -->
+	<div class="main" style="margin-right: 3%;" id="mainid">
+		<div class="hidden-xs hidden-sm position-fixed " style="position: relative;left: 3%;">
+			<div class="fixed container">
+				<ul class="mr-auto sidebar">
+					<li>
+						<a class="nav-link" href="#"><img class="rounded-circle" src="image/profile.jpg" width="22" height="22"><span style="margin-left: 8px; font-size: 12px;color: #000;">Ranjan</span></a>
+					</li>
+					<li style="margin-top: 10px;">
+						<a class="nav-link" href="#"><img class="rounded-circle" src="icons/bag.png" width="22" height="22"><span style="margin-left: 8px; font-size: 12px;color: #000;">News Feed</span></a>
+					</li>
+					<li>
+						<a class="nav-link" href="#"><img class="rounded-circle" src="icons/facebook.png" width="22" height="22"><span style="margin-left: 8px; font-size: 12px;color: #000;">Messenger</span></a>
+					</li>
+					<li>
+						<a class="nav-link" href="#"><img class="rounded-circle" src="icons/tv.png" width="22" height="22"><span style="margin-left: 8px; font-size: 12px;color: #000;">Watch</span></a>
+					</li>
+					<li>
+						<a class="nav-link" href="#"><img class="rounded-circle" src="icons/shop.png" width="22" height="22"><span style="margin-left: 8px; font-size: 12px;color: #000;">Marketplace</span></a>
+					</li>
+					<p style="font-size: 13px;margin-left: 10px; margin-top: 15px;font-weight: bold;">Shortcuts</p>
+					<li>
+						<a class="nav-link" href="#"><img class="rounded-circle" src="icons/event.png" width="22" height="22"><span style="margin-left: 8px; font-size: 12px;color: #000;">Ranjan</span></a>
+					</li>
+					<li>
+						<a class="nav-link" href="#"><i class="fa fa-group"></i><span style="margin-left: 15px; font-size: 12px;color: #000;">Ranjan</span></a>
+					</li>
+					<p style="font-size: 13px;margin-left: 10px; margin-top: 15px;font-weight: bold;">Explore</p>
+					<li>
+						<a class="nav-link" href="#"><img class="rounded-circle" src="icons/event.png" width="22" height="22"><span style="margin-left: 8px; font-size: 12px;color: #000;">Ranjan</span></a>
+					</li>
+					<li>
+						<a class="nav-link" href="#"><i class="fa fa-group"></i><span style="margin-left: 15px; font-size: 12px;color: #000;">Ranjan</span></a>
+					</li>
+
+
+					<li class="nav-item">
+			        <a class="nav-linkdropdown-toggle" data-toggle="dropdown" href="#" style="color: #000;margin-left: 10px;"><i class="material-icons" style="position: relative;font-size: 24px;top: 5px;">arrow_drop_down</i><span style="font-size: 13px;color: blue;">See more..</span></a>
+			        <!-- <div class="dropdown-menu" style=" margin-top:32%;height: 350px;">
+			        	<span style="font-size: 12px;margin-left: 5px;">Your page:</span>
+			        	<a class="dropdown-item" href="https://www.facebook.com/pages/creation/?ref_type=logout_gear" style="font-size: 12px;margin-left: 5px;">Create Page</a>
+					    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px;">Manage Page</a>
+					    <hr style="position: relative;bottom: 15px;">
+					    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px; position: relative;bottom: 25px;" >Create Group</a>
+					    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px; position: relative;bottom: 25px;"">New Group</a>
+					    <hr style="position: relative;bottom: 35px;">
+					    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px;position: relative;bottom: 40px;"">Create Ads</a>
+					    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px;position: relative;bottom: 40px;"">Advertising on Facebook</a>
+					    <hr style="position: relative;bottom: 45px;">
+					    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px;position: relative;bottom: 55px;"">Activity log</a>
+					    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px;position: relative;bottom: 55px;"">News Feed preferences</a>
+					    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px;position: relative;bottom: 55px;"">Settings</a>
+					    <a class="dropdown-item" href="#" style="font-size: 12px;margin-left: 5px;position: relative;bottom: 55px;"">Log Out</a>
+			        </div> -->
+			      </li>
+				</ul>
+			</div>
+		</div>
+		<!-- Right sidebar end -->
+
+		<div class="container col-md-12" style="position: relative;left: 10px;top: 50px;padding-left: 40%;padding-right: 30%;z-index: -1;">
+			<div class="card" >
+				<div class="card-header" style="background: #fff;">
+					<a href=""><span style="font-size: 15px;font-weight: bold;">Stories</span></a>
+					<a href=""><span style="font-size: 14px;margin-left: 70px;">Archive</span></a>
+					<a href=""><span style="font-size: 14px;">Settings</span></a>
+				</div>
+				<div class="itemsr" style="margin-top: 15px;">
+					<div class="newitem1">
+						<a href=""><i class="fas fa-plus-circle" style="font-size: 50px;padding: 15px;color: gray"></i><span style="position: relative;bottom: 25px;">Add to your story</span></a>
+						<p style="font-size: 12px; margin-top: -40px;position: relative;left: 80px;">Share a photo or video or write<br> something</p>
+					</div>
+					<div class="newitem1">
+						<a href=""><i class="fas fa-plus-circle" style="font-size: 50px;padding: 15px;color: gray"></i><span style="position: relative;bottom: 25px;">Add to your story</span></a>
+						<p style="font-size: 12px; margin-top: -40px;position: relative;left: 80px;">Share a photo or video or write<br> something</p>
+					</div>
+					<div class="newitem1">
+						<a href=""><i class="fas fa-plus-circle" style="font-size: 50px;padding: 15px;color: gray"></i><span style="position: relative;bottom: 25px;">Add to your story</span></a>
+						<p style="font-size: 12px; margin-top: -40px;position: relative;left: 80px;">Share a photo or video or write<br> something</p>
+					</div>
+					<div class="newitem1">
+						<a href=""><i class="fas fa-plus-circle" style="font-size: 50px;padding: 15px;color: gray"></i><span style="position: relative;bottom: 25px;">Add to your story</span></a>
+						<p style="font-size: 12px; margin-top: -40px;position: relative;left: 80px;">Share a photo or video or write<br> something</p>
+					</div>
+					<ul style="list-style-type: none;margin-top: -20px;">
+					<li class="nav-item">
+			        <a class="nav-linkdropdown-toggle" data-toggle="dropdown" href="#" style="color: #000;margin-left: -20px;"><i class="material-icons" style="position: relative;font-size: 24px;top: 5px;">arrow_drop_down</i><span style="font-size: 13px;color: blue;">See more..</span></a>
+			        </li>
+			        </ul>
+				</div>
+			</div>
+			<div class="card" >
+				<div class="card-header" style="background: #fff;">
+					<a href=""><span style="font-size: 12px;font-weight: bold;">YOUR PAGE</span></a>
+					<a href=""><span style="font-size: 14px; margin-left: 80px;">Settings</span></a>
+				</div>
+				<div class="itemsr" style="margin-top: 15px;">
+					<div class="newitem1">
+						<a href=""><i class="fas fa-plus-circle" style="font-size: 50px;padding: 15px;color: gray"></i><span style="position: relative;bottom: 25px;">Add to your story</span></a>
+						<p style="font-size: 12px; margin-top: -40px;position: relative;left: 80px;">Share a photo or video or write<br> something</p>
+					</div>
+					<div class="newitem1">
+						<a href=""><i class="fas fa-plus-circle" style="font-size: 50px;padding: 15px;color: gray"></i><span style="position: relative;bottom: 25px;">Add to your story</span></a>
+						<p style="font-size: 12px; margin-top: -40px;position: relative;left: 80px;">Share a photo or video or write<br> something</p>
+					</div>
+					<ul style="list-style-type: none;margin-top: -20px;">
+					<li class="nav-item">
+			        <a class="nav-linkdropdown-toggle" data-toggle="dropdown" href="#" style="color: #000;margin-left: -20px;"><i class="material-icons" style="position: relative;font-size: 24px;top: 5px;">arrow_drop_down</i><span style="font-size: 13px;color: blue;">See more..</span></a>
+			        </li>
+			        </ul>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="container " style="width:260px;position:fixed;margin-left: 52%;margin-top: -43%;z-index: -1;">
+			<div class="card">
+				<div class="card-header">
+					<p style="font-size: 11px;font-weight: bold;margin-left: -10px;">YOUR PAGES</p>
+				</div>
+				<ul class="mr-auto">
+					<li class="nav-link">
+						<a href=""><img class="rounded-circle" src="image/profile.jpg" width="35" height="35" style="margin-left: -40px"><span style="margin-left: 10px; font-size: 13px;color: #000;">Happy Loves</span>
+					</li>					
+				</ul>
+					<p style="color: #000;margin-left: 10px;margin-top: -5px;font-weight: bold;font-size: 11px;">CONTACTS</p>
+				<ul class="mr-auto" id="chat">
+					<li class="nav-link">
+						<a href=""><img class="rounded-circle" src="image/profile.jpg" width="30" height="30" style="margin-left: -40px"><span style="margin-left: 10px; font-size: 13px;color: #000;">Dilshad Khan</span>
+					</li>
+					<li class="nav-link">
+						<a href=""><img class="rounded-circle" src="image/profile.jpg" width="30" height="30" style="margin-left: -40px"><span style="margin-left: 10px; font-size: 13px;color: #000;">Abhishek Gupta</span>
+					</li>
+					<li class="nav-link">
+						<a href=""><img class="rounded-circle" src="image/profile.jpg" width="30" height="30" style="margin-left: -40px"><span style="margin-left: 10px; font-size: 13px;color: #000;">Naresh Kumar</span>
+					</li>
+					<li class="nav-link">
+						<a href=""><img class="rounded-circle" src="image/profile.jpg" width="30" height="30" style="margin-left: -40px"><span style="margin-left: 10px; font-size: 13px;color: #000;">Rahul Raj</span>
+					</li>
+					<li class="nav-link">
+						<a href=""><img class="rounded-circle" src="image/profile.jpg" width="30" height="30" style="margin-left: -40px"><span style="margin-left: 10px; font-size: 13px;color: #000;">Gaurav Singh</span>
+					</li>
+					<li class="nav-link">
+						<a href=""><img class="rounded-circle" src="image/profile.jpg" width="30" height="30" style="margin-left: -40px"><span style="margin-left: 10px; font-size: 13px;color: #000;">Vipin</span>
+					</li>
+					<li class="nav-link">
+						<a href=""><img class="rounded-circle" src="image/profile.jpg" width="30" height="30" style="margin-left: -40px"><span style="margin-left: 10px; font-size: 13px;color: #000;">Suraj Sarkar</span>
+					</li>
+					<li class="nav-link">
+						<a href=""><img class="rounded-circle" src="image/profile.jpg" width="30" height="30" style="margin-left: -40px"><span style="margin-left: 10px; font-size: 13px;color: #000;">Deepali Singh</span>
+					</li>
+					<li class="nav-link">
+						<a href=""><img class="rounded-circle" src="image/profile.jpg" width="30" height="30" style="margin-left: -40px"><span style="margin-left: 10px; font-size: 13px;color: #000;">Sameer Seikh</span>
+					</li>
+					<li class="nav-link">
+						<a href=""><img class="rounded-circle" src="image/profile.jpg" width="30" height="30" style="margin-left: -40px"><span style="margin-left: 10px; font-size: 13px;color: #000;">Vishal Dhama</span>
+					</li>					
+				</ul>
+				<p style="color: #000;margin-left: 10px;margin-top: -5px;font-weight: bold;font-size: 11px;">GROUP CONVERSIONS</p>
+				<ul class="mr-auto">
+					<li class="nav-link" style="margin-top: -10">
+						<a href=""><img class="rounded-circle" src="image/profile.jpg" width="30" height="30" style="margin-left: -40px"><span style="margin-left: 10px; font-size: 13px;color: #000;">Happy Loves</span>
+					</li>					
+				</ul>
+				<form class="form-inline" style="margin-top: 20px;">
+		    	<input class="form-control" type="search" style="width:220px;height: 25px;margin-top: -20px;position: relative;right: 0px;">
+		    	<button class="btn" type="submit" style="height: 25px;margin-top: -25px;position: relative;left: 80%;"><i class="fa fa-search" style="font-size: 18px;position: relative;bottom: 4px;"></i></button>
+			</form>					
+			</div>
+		</div>
+
+
+
+
+	<!-- Page bar start Here -->
+		<div class="container" style="padding-right: 40%;position: relative;margin-top: -63%;right: 20%;z-index: -1;">
+			<div class="content">
+				<div class="card" style="height: 170px;">
+					<p class="text" style="background: #E8EAEE;border: 1px solid #E8EAEE;font-size: 12px;font-weight: bold;padding:5px;">Create post</p>
+						<a class="nav-link" href="#"><img class="rounded-circle" src="image/profile.jpg" width="40" height="40" style="position: relative;top: 5px;z-index: 1;left: 10px;">
+						<div class="md-form" style="position: relative;bottom: 40px;">
+						  <textarea type="text" id="form10" class="md-textarea form-control" rows="3" style="resize: none;border: none;"></textarea>
+						  <hr style="position: relative;bottom: 30px;">
+						</div>
+					</a>
+					<div class="inline" id="textbar">
+						<ul class="mr-auto" style="position: relative;bottom: 30px;list-style-type: none;">
+							<li>
+								<a class="nav-link" href="#"><img class="rounded-circle" src="icons/img.png" width="23" height="23" style="position: relative;top: -60px;z-index: 1;left: -20px;"><span style="position: relative;top: -60px;z-index: 1;left: -15px;font-size: 13px;color: #000;font-weight: bold;">Photo/Video</span></a>
+							</li>
+							<li>
+								<a class="nav-link" href="#"><img class="rounded-circle" src="icons/tag.png" width="23" height="23" style="position: relative;top: -60px;z-index: 1;left: -20px;"><span style="position: relative;top: -60px;z-index: 1;left: -15px;font-size: 13px;color: #000;font-weight: bold;">Tag Friends</span></a>
+							</li>
+							<li>
+								<a class="nav-link" href="#"><img class="rounded-circle" src="icons/happy.png" width="23" height="23" style="position: relative;top: -60px;z-index: 1;left: -20px;"><span style="position: relative;top: -60px;z-index: 1;left: -15px;font-size: 13px;color: #000;font-weight: bold;">Feeling/Activ...</span></a>
+							</li>
+							<li>
+								<a class="nav-link" href="#"><img class="rounded-circle" src="icons/dot.png" width="23" height="23" style="position: relative;top: -60px;z-index: 1;left: -20px;"><span style="position: relative;top: -60px;z-index: 1;left: -20px;font-size: 13px;color: #000;font-weight: bold;"></span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="card" style="margin-top: 10px;">
+					<div class="card-header">
+						<a class="nav-link" href="#"><img class="rounded-circle" src="image/profile.jpg" width="40" height="40" style="position: relative;top: 5px;z-index: 1;left: -20px;"><span style="font-weight: bold;position: relative;top: -20px;right: 10px">Aslam Desusa <ins style="font-weight: 300;text-decoration: none;">is feeling fabulous with Rani pandit</ins></span><img class="rounded-circle" src="icons/dot.png" width="23" height="23" style="position: relative;top: -20px;z-index: 1;left: 30px;"></a>
+					</div>
+					<img src="image/img2.jpg" style="width: 517px;">
+					<div class="newitems" style="margin-left: 10px;margin-top: 2px;">
+						<img class="rounded-circle" src="icons/icon8.png" width="15" height="15" style="position: relative;top: 5px;z-index: 1;left: -10px;"><span style="font-weight: bold;position: relative;top: 5px;right: 2px;font-size: 12px">76</span>
+						<p style="position: relative;top: -13px;font-size: 13px;left: 400px;">398 comments</p>
+						<hr>
+						<div style="position: relative;bottom: 5px;">
+							<a href=""><i class="fas fa-thumbs-up" style="color: gray;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Like</span></a>
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 130px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Comments</span></a> 
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 120px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Share</span></a> 
+						</div>
+					</div>
+				</div>
+				<div class="card" style="margin-top: 10px;">
+					<div class="card-header">
+						<a class="nav-link" href="#"><img class="rounded-circle" src="image/profile.jpg" width="40" height="40" style="position: relative;top: 5px;z-index: 1;left: -20px;"><span style="font-weight: bold;position: relative;top: -20px;right: 10px">Aslam Desusa <ins style="font-weight: 300;text-decoration: none;">is feeling fabulous with Rani pandit</ins></span><img class="rounded-circle" src="icons/dot.png" width="23" height="23" style="position: relative;top: -20px;z-index: 1;left: 30px;"></a>
+					</div>
+					<img src="image/img1.jpg" style="width: 517px;">
+					<div class="newitems" style="margin-left: 10px;margin-top: 2px;">
+						<img class="rounded-circle" src="icons/icon8.png" width="15" height="15" style="position: relative;top: 5px;z-index: 1;left: -10px;"><span style="font-weight: bold;position: relative;top: 5px;right: 2px;font-size: 12px">76</span>
+						<p style="position: relative;top: -13px;font-size: 13px;left: 400px;">398 comments</p>
+						<hr>
+						<div style="position: relative;bottom: 5px;">
+							<a href=""><i class="fas fa-thumbs-up" style="color: gray;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Like</span></a>
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 130px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Comments</span></a> 
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 120px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Share</span></a> 
+						</div>
+					</div>
+				</div>
+				<div class="card" style="margin-top: 10px;">
+					<div class="card-header">
+						<a class="nav-link" href="#"><img class="rounded-circle" src="image/profile.jpg" width="40" height="40" style="position: relative;top: 5px;z-index: 1;left: -20px;"><span style="font-weight: bold;position: relative;top: -20px;right: 10px">Aslam Desusa <ins style="font-weight: 300;text-decoration: none;">is feeling fabulous with Rani pandit</ins></span><img class="rounded-circle" src="icons/dot.png" width="23" height="23" style="position: relative;top: -20px;z-index: 1;left: 30px;"></a>
+					</div>
+					<img src="image/img3.jpg" style="width: 517px;">
+					<div class="newitems" style="margin-left: 10px;margin-top: 2px;">
+						<img class="rounded-circle" src="icons/icon8.png" width="15" height="15" style="position: relative;top: 5px;z-index: 1;left: -10px;"><span style="font-weight: bold;position: relative;top: 5px;right: 2px;font-size: 12px">76</span>
+						<p style="position: relative;top: -13px;font-size: 13px;left: 400px;">398 comments</p>
+						<hr>
+						<div style="position: relative;bottom: 5px;">
+							<a href=""><i class="fas fa-thumbs-up" style="color: gray;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Like</span></a>
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 130px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Comments</span></a> 
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 120px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Share</span></a> 
+						</div>
+					</div>
+				</div>
+				<div class="card" style="margin-top: 10px;">
+					<div class="card-header">
+						<a class="nav-link" href="#"><img class="rounded-circle" src="image/profile.jpg" width="40" height="40" style="position: relative;top: 5px;z-index: 1;left: -20px;"><span style="font-weight: bold;position: relative;top: -20px;right: 10px">Aslam Desusa <ins style="font-weight: 300;text-decoration: none;">is feeling fabulous with Rani pandit</ins></span><img class="rounded-circle" src="icons/dot.png" width="23" height="23" style="position: relative;top: -20px;z-index: 1;left: 30px;"></a>
+					</div>
+					<img src="image/img5.jpg" style="width: 517px;">
+					<div class="newitems" style="margin-left: 10px;margin-top: 2px;">
+						<img class="rounded-circle" src="icons/icon8.png" width="15" height="15" style="position: relative;top: 5px;z-index: 1;left: -10px;"><span style="font-weight: bold;position: relative;top: 5px;right: 2px;font-size: 12px">76</span>
+						<p style="position: relative;top: -13px;font-size: 13px;left: 400px;">398 comments</p>
+						<hr>
+						<div style="position: relative;bottom: 5px;">
+							<a href=""><i class="fas fa-thumbs-up" style="color: gray;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Like</span></a>
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 130px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Comments</span></a> 
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 120px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Share</span></a> 
+						</div>
+					</div>
+				</div>
+				<div class="card" style="margin-top: 10px;">
+					<div class="card-header">
+						<a class="nav-link" href="#"><img class="rounded-circle" src="image/profile.jpg" width="40" height="40" style="position: relative;top: 5px;z-index: 1;left: -20px;"><span style="font-weight: bold;position: relative;top: -20px;right: 10px">Aslam Desusa <ins style="font-weight: 300;text-decoration: none;">is feeling fabulous with Rani pandit</ins></span><img class="rounded-circle" src="icons/dot.png" width="23" height="23" style="position: relative;top: -20px;z-index: 1;left: 30px;"></a>
+					</div>
+					<img src="image/img3.jpg" style="width: 517px;">
+					<div class="newitems" style="margin-left: 10px;margin-top: 2px;">
+						<img class="rounded-circle" src="icons/icon8.png" width="15" height="15" style="position: relative;top: 5px;z-index: 1;left: -10px;"><span style="font-weight: bold;position: relative;top: 5px;right: 2px;font-size: 12px">76</span>
+						<p style="position: relative;top: -13px;font-size: 13px;left: 400px;">398 comments</p>
+						<hr>
+						<div style="position: relative;bottom: 5px;">
+							<a href=""><i class="fas fa-thumbs-up" style="color: gray;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Like</span></a>
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 130px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Comments</span></a> 
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 120px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Share</span></a> 
+						</div>
+					</div>
+				</div>
+				<div class="card" style="margin-top: 10px;">
+					<div class="card-header">
+						<a class="nav-link" href="#"><img class="rounded-circle" src="image/profile.jpg" width="40" height="40" style="position: relative;top: 5px;z-index: 1;left: -20px;"><span style="font-weight: bold;position: relative;top: -20px;right: 10px">Aslam Desusa <ins style="font-weight: 300;text-decoration: none;">is feeling fabulous with Rani pandit</ins></span><img class="rounded-circle" src="icons/dot.png" width="23" height="23" style="position: relative;top: -20px;z-index: 1;left: 30px;"></a>
+					</div>
+					<img src="image/img4.jpg" style="width: 517px;">
+					<div class="newitems" style="margin-left: 10px;margin-top: 2px;">
+						<img class="rounded-circle" src="icons/icon8.png" width="15" height="15" style="position: relative;top: 5px;z-index: 1;left: -10px;"><span style="font-weight: bold;position: relative;top: 5px;right: 2px;font-size: 12px">76</span>
+						<p style="position: relative;top: -13px;font-size: 13px;left: 400px;">398 comments</p>
+						<hr>
+						<div style="position: relative;bottom: 5px;">
+							<a href=""><i class="fas fa-thumbs-up" style="color: gray;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Like</span></a>
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 130px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Comments</span></a> 
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 120px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Share</span></a> 
+						</div>
+					</div>
+				</div>
+				<div class="card" style="margin-top: 10px;">
+					<div class="card-header">
+						<a class="nav-link" href="#"><img class="rounded-circle" src="image/profile.jpg" width="40" height="40" style="position: relative;top: 5px;z-index: 1;left: -20px;"><span style="font-weight: bold;position: relative;top: -20px;right: 10px">Aslam Desusa <ins style="font-weight: 300;text-decoration: none;">is feeling fabulous with Rani pandit</ins></span><img class="rounded-circle" src="icons/dot.png" width="23" height="23" style="position: relative;top: -20px;z-index: 1;left: 30px;"></a>
+					</div>
+					<img src="image/img2.jpg" style="width: 517px;">
+					<div class="newitems" style="margin-left: 10px;margin-top: 2px;">
+						<img class="rounded-circle" src="icons/icon8.png" width="15" height="15" style="position: relative;top: 5px;z-index: 1;left: -10px;"><span style="font-weight: bold;position: relative;top: 5px;right: 2px;font-size: 12px">76</span>
+						<p style="position: relative;top: -13px;font-size: 13px;left: 400px;">398 comments</p>
+						<hr>
+						<div style="position: relative;bottom: 5px;">
+							<a href=""><i class="fas fa-thumbs-up" style="color: gray;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Like</span></a>
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 130px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Comments</span></a> 
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 120px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Share</span></a> 
+						</div>
+					</div>
+				</div>
+				<div class="card" style="margin-top: 10px;">
+					<div class="card-header">
+						<a class="nav-link" href="#"><img class="rounded-circle" src="image/profile.jpg" width="40" height="40" style="position: relative;top: 5px;z-index: 1;left: -20px;"><span style="font-weight: bold;position: relative;top: -20px;right: 10px">Aslam Desusa <ins style="font-weight: 300;text-decoration: none;">is feeling fabulous with Rani pandit</ins></span><img class="rounded-circle" src="icons/dot.png" width="23" height="23" style="position: relative;top: -20px;z-index: 1;left: 30px;"></a>
+					</div>
+					<img src="image/img5.jpg" style="width: 517px;">
+					<div class="newitems" style="margin-left: 10px;margin-top: 2px;">
+						<img class="rounded-circle" src="icons/icon8.png" width="15" height="15" style="position: relative;top: 5px;z-index: 1;left: -10px;"><span style="font-weight: bold;position: relative;top: 5px;right: 2px;font-size: 12px">76</span>
+						<p style="position: relative;top: -13px;font-size: 13px;left: 400px;">398 comments</p>
+						<hr>
+						<div style="position: relative;bottom: 5px;">
+							<a href=""><i class="fas fa-thumbs-up" style="color: gray;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Like</span></a>
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 130px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Comments</span></a> 
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 120px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Share</span></a> 
+						</div>
+					</div>
+				</div>
+				<div class="card" style="margin-top: 10px;">
+					<div class="card-header">
+						<a class="nav-link" href="#"><img class="rounded-circle" src="image/profile.jpg" width="40" height="40" style="position: relative;top: 5px;z-index: 1;left: -20px;"><span style="font-weight: bold;position: relative;top: -20px;right: 10px">Aslam Desusa <ins style="font-weight: 300;text-decoration: none;">is feeling fabulous with Rani pandit</ins></span><img class="rounded-circle" src="icons/dot.png" width="23" height="23" style="position: relative;top: -20px;z-index: 1;left: 30px;"></a>
+					</div>
+					<img src="image/img3.jpg" style="width: 517px;">
+					<div class="newitems" style="margin-left: 10px;margin-top: 2px;">
+						<img class="rounded-circle" src="icons/icon8.png" width="15" height="15" style="position: relative;top: 5px;z-index: 1;left: -10px;"><span style="font-weight: bold;position: relative;top: 5px;right: 2px;font-size: 12px">76</span>
+						<p style="position: relative;top: -13px;font-size: 13px;left: 400px;">398 comments</p>
+						<hr>
+						<div style="position: relative;bottom: 5px;">
+							<a href=""><i class="fas fa-thumbs-up" style="color: gray;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Like</span></a>
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 130px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Comments</span></a> 
+							<a href=""><i class="fas fa-comment-alt" style="color: gray;margin-left: 120px;"></i><span style="font-weight: bold;margin-left: 4px;color: gray">Share</span></a> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- second section complete -->
+
+
+<!-- third section Start -->
+
+
+</body>
+</html>
